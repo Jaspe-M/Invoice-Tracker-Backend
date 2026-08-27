@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/invoices")
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:4173"})
 public class InvoiceController {
 
     private final InvoiceService invoiceService;
