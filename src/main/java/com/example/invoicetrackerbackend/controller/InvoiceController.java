@@ -1,6 +1,6 @@
 package com.example.invoicetrackerbackend.controller;
 
-import com.example.invoicetrackerbackend.dto.InvoiceRequest;
+
 import com.example.invoicetrackerbackend.entity.Invoice;
 import com.example.invoicetrackerbackend.service.InvoiceService;
 import org.springframework.web.bind.annotation.*;
@@ -22,8 +22,4 @@ public class InvoiceController {
         return invoiceService.getAllInvoices();
     }
 
-    @PostMapping
-    public Invoice createInvoice(@RequestBody InvoiceRequest request) {
-        return invoiceService.createInvoice(request.description(), request.amount(), request.departmentId());
-    }
 }
