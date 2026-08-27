@@ -1,0 +1,37 @@
+### 1. Get Manager Dashboard Data
+GET http://localhost:8080/api/dashboard/manager
+Accept: application/json
+
+###
+
+### 2. Get All Departments
+GET http://localhost:8080/api/departments
+Accept: application/json
+
+###
+
+### 3. Update Department Budget
+PUT http://localhost:8080/api/departments/1/budget
+Content-Type: application/json
+
+{
+  "budget": 7000.00
+}
+
+###
+
+### 4. Get All Invoices
+GET http://localhost:8080/api/invoices
+Accept: application/json
+
+###
+
+### 5. Create New Invoice
+POST http://localhost:8080/api/invoices
+Content-Type: application/json
+
+{
+  "description": "Software License",
+  "amount": 450.00,
+  "departmentId": 4
+}
