@@ -1,6 +1,9 @@
 # Budget Tracker Backend
 
-REST API for managing company budgets, department allocations, and invoice submissions. Serves data entities and endpoints for manager and employee dashboards.
+A Spring Boot REST API built specifically to power the [React budget tracking dashboard](https://github.com/Jaspe-M/invoice-tracker-frontend), managing company budgets, 
+department allocations, and invoice submissions for both manager and employee roles. The backend is seeded with demo data and only exposes GET 
+endpoints to keep the data clean and consistent for everyone visiting the demo. All interactions like approvals, rejections, and budget changes happen locally in the frontend 
+and reset to the original data on page refresh. The database is hosted on Supabase using PostgreSQL.
 
 ## Tech Stack
 * Java 21
@@ -21,3 +24,4 @@ Run the application with the Maven wrapper:
 
 ```bash
 ./mvnw spring-boot:run
+```
